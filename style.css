@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Roboto&family=Ubuntu:ital,wght@0,300;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+  /* background: #212020; */
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+
+/* Navigation  section */
+
+header {
+  position: fixed;
+  /* background-color: #fff; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #ff8453f7; */
+  background-color:#271b29;
+  /* height: 70px; */
+  box-shadow: 0px 0px 1px #e9d7d7;
+}
+nav h2 {
+  cursor: pointer;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+nav h2 i {
+  margin-left: 22px;
+  color: rgba(197, 251, 2, 0.759);
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 6px;
+}
+nav ul li a:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: all 0.9s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+/* Home section */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 710px;
+  /* background-color: #ff9064; */
+  background-image: url(./images/bg3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.leftColumn h1 {
+  font-size: 50px;
+  cursor: pointer;
+}
+.leftColumn .cv-btn {
+  margin: 20px 0px;
+}
+.leftColumn .btn {
+  background-color: #3450db;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 9px 18px;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.6s;
+}
+.leftColumn .btn:hover {
+  background-color: #2a0a9d;
+}
+.leftColumn h1 span {
+  color: rgba(197, 251, 2, 0.759);
+}
+.leftColumn span i {
+  font-size: 27px;
+  margin-right: 22px;
+  margin-top: 16px;
+  color: wheat;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.leftColumn span i:hover {
+  transform: scale(1.3);
+}
+.name {
+  font-size: 65px;
+}
+#element {
+  font-size: 50px;
+}
+
+.rightColumn img {
+  width: 314px;
+  border-radius: 177px;
+  height: 326px;
+  object-fit: cover;
+}
+
+
+
+/*About me section*/
+
+.about_section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+}
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about_section .about_header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.about_section .right_part img {
+  width: 350px;
+  border-radius: 177px;
+  height: 362px;
+  object-fit: cover;
+}
+.left_part {
+  width: 700px;
+}
+.left_part p {
+  color: #ffffffcb;
+  font-size: 19px;
+  text-align: justify;
+}
+.left_part .hello{
+    font-size: 18px;
+}
+.left_part h1 {
+  font-size: 70px;
+  color: orange;
+  font-weight: 800;
+}
+
+
+/* Skills section */
+
+.skillsection {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+.skillsection .row {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+.image img {
+  width: 131px;
+}
+.skillheader {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+ul li {
+  color:#fff;
+  font-weight: 300;
+}
+ul li i {
+  margin-right: 14px;
+  display: flex;
+}
+.row h2 {
+  color: #fff;
+  font-weight: 400;
+}
+.skillsection .column {
+  padding: 30px 60px;
+  border-radius: 20px;
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.skillsection .column:hover {
+  transform: scale(1.08);
+}
+
+
+
+
+
+
+
+/* Project Section */
+
+.projectSection {
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+}
+.projectheader {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 3.5;
+  color: #fff;
+}
+.projectName h3 {
+  font-size: 25px;
+  color: #ffffffed;
+}
+.projectDesc p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  color: #ffffffda;
+  font-weight: 600;
+}
+.projectsRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box {
+  padding: 22px;
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  margin: 20px 20px;
+  border-radius: 20px;
+  color: #fff;
+  width: 30%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.box:hover {
+  transform: translateY(-17px);
+}
+.sourceCode{
+  display: flex;
+  gap: 20px;
+}
+.sourceCode a {
+  text-decoration: none;
+  padding: 9px 12px;
+  display: inline-block;
+  background-color: #a881af;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sourceCode a:hover {
+  background-color: #80669d;
+}
+
+
+
+/*Education Section*/
+
+.education {
+  width: 77%;
+  margin: auto;
+  padding: 40px 0px;
+}
+.education h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.education_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.flex {
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  padding: 20px 15px;
+}
+.education_section h2
+{
+  color: #fff;
+}
+.education_section .cgpa{
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+}
+p {
+  color: #ffffffdd;
+  line-height: 1.5;
+  margin-top:7px;
+}
+
+
+
+/*Styling Contact section*/
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    padding: 30px 0px 20px 0px;
+}
+.contact_info h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.contact_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_box p{
+    margin-right: 15px;
+}
+.contact_info .message p{
+    font-size: 18px;
+}
+.contact_info .message p span{
+    color: #1076ba;
+}
+.portfolio{
+  overflow: auto;
+}
+
+
+/* Media queries for responsive design */
+@media(max-width:1280px){
+  .projectSection{
+    width: 100%;
+  }
+  .projectSection .box{
+    width: 25%;
+  }
+  .projectsRow{
+    justify-content: center;
+  }
+  .skillsection{
+    width: 100%;
+  }
+
+}
+@media(max-width:992px){
+  nav h2{
+    font-size: 27px;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+  .leftColumn h1{
+    font-size: 31px;
+  }
+  .leftColumn h1 span{
+    font-size: 45px;
+  }
+  .rightColumn img{
+    width: 290px;
+  }
+  .leftColumn .btn{
+    font-size: 15px;
+  }
+  .leftColumn span i{
+    font-size: 22px;
+  }
+  section{
+    height: 70vh;
+  }
+  .about_section .about_header{
+    font-size: 38px;
+  }
+  .left_part .hello {
+    font-size: 14px;
+  }
+  .left_part h1{
+    font-size: 40px;
+  }
+  .left_part p{
+    font-size: 15px;
+  }
+  .about_section .right_part img{
+    width: 260px;
+    height: 260px;
+  }
+  .skillheader{
+    font-size: 40px;
+  }
+  .projectSection{
+    width: 100%;
+  }
+  
+  .skillsection .column{
+    width: 225px;
+  }
+  .skillsection .column{
+    font-size: 15px;
+  }
+  .projectSection .box{
+    width: 25%;
+  }
+  .projectsRow{
+    justify-content: center;
+  }
+  .skillsection{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+/*Certifiaction*/
+
+.Certifications {
+  width: 77%;
+  margin: auto;
+  padding: 40px 0px;
+}
+.Certifications h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 2;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.Certifications_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.flex {
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  padding: 20px 15px;
+}
+.Certifications_section h2
+{
+  color: #fff;
+}
+.Certifications_section .cgpa{
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+}
+p {
+  color: #ffffffdd;
+  line-height: 1.5;
+  margin-top:7px;
+}
+
+
+
