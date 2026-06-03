@@ -25,8 +25,7 @@ export default function Navbar() {
 
   useEffect(() => {
   const handleScroll = () => {
-    const sections =
-      document.querySelectorAll("section[id]");
+    const sections = document.querySelectorAll<HTMLElement>("section[id]");
 
     let current = "";
 
